@@ -3,41 +3,404 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Services - UK Call Center</title>
+    <title>Our Services - Complete Call Center Solutions | JACKCallCenter</title>
+    <meta name="description" content="Explore our complete call center solutions for food businesses: home delivery support, restaurant reservations, customer service, analytics and more.">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="critical.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav class="navbar">
+    <!-- Header & Navigation -->
+    <header class="header">
         <div class="container">
-            <a href="index.html" class="logo">UK<span>CallCenter</span></a>
-            <div class="nav-links">
-                <a href="index.html">Home</a>
-                <a href="services.html" class="active">Services</a>
-                <a href="about.html">About</a>
-                <a href="contact.html" class="btn-contact">Contact</a>
-            </div>
+            <nav class="navbar">
+                <a href="index.html" class="logo">
+                    <i class="fas fa-headset"></i>
+                    <span>JACKCallCenter</span>
+                </a>
+                
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="services.html" class="active">Services <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="services.html#delivery">Home Delivery Support</a>
+                            <a href="services.html#reservations">Restaurant Reservations</a>
+                            <a href="services.html#customer-service">Customer Service</a>
+                            <a href="services.html#virtual-assistant">Virtual Assistant</a>
+                            <a href="services.html#analytics">Analytics & Reporting</a>
+                        </div>
+                    </li>
+                    <li><a href="industries.html">Industries</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                
+                <div class="nav-cta">
+                    <a href="tel:+15551234567" class="phone-link">
+                        <i class="fas fa-phone"></i> +1 (555) 123-4567
+                    </a>
+                    <a href="contact.html" class="btn-primary">Get Quote</a>
+                </div>
+                
+                <button class="hamburger" id="hamburger">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </nav>
         </div>
-    </nav>
+    </header>
 
+    <!-- Page Header -->
     <section class="page-header">
         <div class="container">
             <h1>Our Services</h1>
-            <p>Complete call center solutions for UK food businesses</p>
+            <p>Complete call center solutions tailored for every aspect of your food business</p>
         </div>
     </section>
 
-    <section class="services-details">
+    <!-- Services Detail -->
+    <section class="services-detail">
         <div class="container">
-            <!-- Add services content here -->
-            <h2>Detailed Services Coming Soon</h2>
+            <!-- Home Delivery Support -->
+            <div class="service-detail-card" id="delivery">
+                <div class="service-detail-content">
+                    <span class="service-category">Most Popular</span>
+                    <h2>Home Delivery Support</h2>
+                    <p class="service-description">Complete call center solutions for home delivery services including order taking, customer service, dispatch coordination, and delivery tracking.</p>
+                    
+                    <div class="service-features">
+                        <h3>Key Features:</h3>
+                        <div class="features-grid">
+                            <div class="feature-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Order Taking & Confirmation</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Delivery Time Estimation</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Driver Coordination & Dispatch</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Delivery Status Updates</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Post-Delivery Follow-up</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Customer Complaint Resolution</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="service-pricing">
+                        <h3>Pricing Plans:</h3>
+                        <div class="pricing-cards">
+                            <div class="pricing-card">
+                                <h4>Basic</h4>
+                                <div class="price">$499<span>/month</span></div>
+                                <ul>
+                                    <li>Up to 500 calls/month</li>
+                                    <li>8am-10pm Support</li>
+                                    <li>Basic Reporting</li>
+                                    <li>Email Support</li>
+                                </ul>
+                                <a href="contact.html" class="btn-primary">Get Started</a>
+                            </div>
+                            
+                            <div class="pricing-card featured">
+                                <span class="badge">Most Popular</span>
+                                <h4>Professional</h4>
+                                <div class="price">$899<span>/month</span></div>
+                                <ul>
+                                    <li>Up to 1500 calls/month</li>
+                                    <li>24/7 Support</li>
+                                    <li>Advanced Reporting</li>
+                                    <li>Multilingual Agents</li>
+                                    <li>Priority Support</li>
+                                </ul>
+                                <a href="contact.html" class="btn-primary">Get Started</a>
+                            </div>
+                            
+                            <div class="pricing-card">
+                                <h4>Enterprise</h4>
+                                <div class="price">$1,499<span>/month</span></div>
+                                <ul>
+                                    <li>Unlimited Calls</li>
+                                    <li>24/7 Support</li>
+                                    <li>Custom Analytics</li>
+                                    <li>Dedicated Team</li>
+                                    <li>API Integration</li>
+                                </ul>
+                                <a href="contact.html" class="btn-primary">Get Started</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="service-benefits">
+                        <h3>Benefits:</h3>
+                        <ul>
+                            <li><strong>Increased Efficiency:</strong> Handle 40% more orders with our streamlined process</li>
+                            <li><strong>Reduced Wait Times:</strong> Average call answer time under 30 seconds</li>
+                            <li><strong>Improved Customer Satisfaction:</strong> 98% customer satisfaction rate</li>
+                            <li><strong>Cost Savings:</strong> Save up to 60% compared to in-house call centers</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="service-detail-image">
+                    <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Home Delivery Support">
+                </div>
+            </div>
+            
+            <!-- Restaurant Reservations -->
+            <div class="service-detail-card" id="reservations">
+                <div class="service-detail-image">
+                    <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Restaurant Reservations">
+                </div>
+                <div class="service-detail-content">
+                    <h2>Restaurant Reservations</h2>
+                    <p class="service-description">Professional reservation management, table booking, and customer coordination for dine-in restaurants of all sizes.</p>
+                    
+                    <div class="service-features">
+                        <h3>Key Features:</h3>
+                        <div class="features-grid">
+                            <div class="feature-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Table Reservations & Booking</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Waitlist Management</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Special Occasion Arrangements</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Menu Inquiries & Recommendations</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Customer Feedback Collection</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Integration with Reservation Systems</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="service-stats">
+                        <div class="stat">
+                            <div class="stat-number">95%</div>
+                            <div class="stat-label">Reservation Accuracy</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">30%</div>
+                            <div class="stat-label">Increase in Table Turnover</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">4.8/5</div>
+                            <div class="stat-label">Customer Rating</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Customer Service -->
+            <div class="service-detail-card" id="customer-service">
+                <div class="service-detail-content">
+                    <h2>Customer Service</h2>
+                    <p class="service-description">24/7 customer service, complaint handling, feedback collection, and customer relationship management for food businesses.</p>
+                    
+                    <div class="service-features">
+                        <h3>Key Features:</h3>
+                        <div class="features-grid">
+                            <div class="feature-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Complaint Handling & Resolution</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Feedback & Review Management</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Loyalty Program Support</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>FAQ & General Inquiries</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Multilingual Support (8+ languages)</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Escalation Management</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="service-detail-image">
+                    <img src="https://images.unsplash.com/photo-1588872657578-7efd1f1555ed?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Customer Service">
+                </div>
+            </div>
+            
+            <!-- More Services -->
+            <div class="other-services">
+                <h2>Additional Services</h2>
+                
+                <div class="other-services-grid">
+                    <div class="other-service-card" id="virtual-assistant">
+                        <i class="fas fa-robot"></i>
+                        <h3>Virtual Assistant</h3>
+                        <p>AI-powered virtual assistants for basic inquiries, order taking, and appointment scheduling.</p>
+                        <a href="contact.html" class="service-link">Learn More</a>
+                    </div>
+                    
+                    <div class="other-service-card" id="analytics">
+                        <i class="fas fa-chart-bar"></i>
+                        <h3>Analytics & Reporting</h3>
+                        <p>Detailed analytics on call patterns, customer behavior, peak hours, and business insights.</p>
+                        <a href="contact.html" class="service-link">Learn More</a>
+                    </div>
+                    
+                    <div class="other-service-card">
+                        <i class="fas fa-mobile-alt"></i>
+                        <h3>App Integration</h3>
+                        <p>Seamless integration with your mobile apps, POS systems, and delivery platforms.</p>
+                        <a href="contact.html" class="service-link">Learn More</a>
+                    </div>
+                    
+                    <div class="other-service-card">
+                        <i class="fas fa-calendar-check"></i>
+                        <h3>Event Management</h3>
+                        <p>Specialized support for catering orders, large events, and corporate bookings.</p>
+                        <a href="contact.html" class="service-link">Learn More</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
-    <footer>
-        <!-- Same footer as index.html -->
+    <!-- Process Section -->
+    <section class="process">
+        <div class="container">
+            <div class="section-header">
+                <h2>How It Works</h2>
+                <p class="section-subtitle">Simple 4-step process to get started</p>
+            </div>
+            
+            <div class="process-steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Consultation</h3>
+                    <p>We understand your business needs and requirements</p>
+                </div>
+                
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Customization</h3>
+                    <p>Tailor our services to match your specific workflows</p>
+                </div>
+                
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Integration</h3>
+                    <p>Seamlessly integrate with your existing systems</p>
+                </div>
+                
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <h3>Launch</h3>
+                    <p>Go live with our trained agents in 7-14 days</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Need a Custom Solution?</h2>
+                <p>Contact us for a personalized service package tailored to your specific business needs.</p>
+                <a href="contact.html" class="btn-primary">Get Custom Quote</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="logo">
+                        <i class="fas fa-headset"></i>
+                        <span>JACKCallCenter</span>
+                    </div>
+                    <p>Professional call center solutions for the food industry since 2012.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="industries.html">Industries</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="services.html#delivery">Home Delivery Support</a></li>
+                        <li><a href="services.html#reservations">Restaurant Reservations</a></li>
+                        <li><a href="services.html#customer-service">Customer Service</a></li>
+                        <li><a href="services.html#virtual-assistant">Virtual Assistant</a></li>
+                        <li><a href="services.html#analytics">Analytics & Reporting</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Contact Info</h3>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Business Ave, Suite 100<br>New York, NY 10001</li>
+                        <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
+                        <li><i class="fas fa-envelope"></i> info@jackcallcenter.com</li>
+                        <li><i class="fas fa-clock"></i> 24/7 Support Available</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; <span id="currentYear"></span> JACKCallCenter. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+            </div>
+        </div>
     </footer>
 
     <script src="script.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>
