@@ -1,55 +1,11 @@
 [build]
-  publish = "dist"
-  command = "npm run build"
-
-[build.environment]
-  NODE_VERSION = "18"
-  NPM_FLAGS = "--production"
-
-[context.production.environment]
-  SENDGRID_API_KEY = "@sendgrid_api_key"
-  CRM_API_KEY = "@crm_api_key"
-  SLACK_WEBHOOK_URL = "@slack_webhook_url"
-
-# Redirects
-[[redirects]]
-  from = "/old-service"
-  to = "/services"
-  status = 301
+  publish = "."
+  command = "echo 'Build complete'"
 
 [[redirects]]
   from = "/*"
-  to = "/404.html"
-  status = 404
+  to = "/index.html"
+  status = 200
 
-# Headers
-[[headers]]
-  for = "/*"
-  [headers.values]
-    X-Frame-Options = "DENY"
-    X-Content-Type-Options = "nosniff"
-    X-XSS-Protection = "1; mode=block"
-    Referrer-Policy = "strict-origin-when-cross-origin"
-    Permissions-Policy = "camera=(), microphone=(), geolocation=()"
-    
-[[headers]]
-  for = "/assets/*"
-  [headers.values]
-    Cache-Control = "public, max-age=31536000, immutable"
-
-[[headers]]
-  for = "*.css"
-  [headers.values]
-    Cache-Control = "public, max-age=604800"
-
-# Edge Functions
-[[edge_functions]]
-  path = "/api/*"
-  function = "api"
-
-# Environment variables
-[context.deploy-preview.environment]
-  SENDGRID_API_KEY = "@sendgrid_api_key_preview"
-
-[context.branch-deploy.environment]
-  SENDGRID_API_KEY = "@sendgrid_api_key_staging"
+[context.production.environment]
+  NODE_VERSION = "18"
