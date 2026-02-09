@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JACK Call Center | Professional Order Taking Services</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- ========== NAVIGATION BAR ========== -->
+    <nav class="navbar">
+        <div class="container">
+            <!-- Logo -->
+            <a href="index.html" class="logo">
+                <i class="fas fa-headset"></i>
+                <span class="logo-text">JACK<span>CallCenter</span></span>
+            </a>
+            
+            <!-- Desktop Navigation Links -->
+            <div class="nav-links" id="navLinks">
+                <a href="index.html" class="active">Home</a>
+                
+                <!-- Services Dropdown -->
+                <div class="dropdown">
+                    <button class="dropdown-btn">
+                        Services <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="services.html#takeaways">For Takeaways</a>
+                        <a href="services.html#restaurants">For Restaurants</a>
+                        <a href="services.html#delivery">For Food Delivery</a>
+                    </div>
+                </div>
+                
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            
+            <!-- Desktop CTA Buttons -->
+            <div class="nav-cta">
+                <a href="tel:+441234567890" class="phone-link">
+                    <i class="fas fa-phone-alt"></i>
+                    +44 1234 567890
+                </a>
+                <a href="contact.html" class="btn btn-primary">Get Started</a>
+            </div>
+            
+            <!-- Mobile Menu Toggle -->
+            <button class="menu-toggle" id="menuToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+    
+    <!-- Mobile Navigation (Hidden on Desktop) -->
+    <div class="mobile-nav" id="mobileNav">
+        <a href="index.html" class="active">Home</a>
+        <a href="services.html">Services</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <div class="mobile-cta">
+            <a href="tel:+441234567890" class="phone-mobile">
+                <i class="fas fa-phone"></i>
+                +44 1234 567890
+            </a>
+            <a href="contact.html" class="btn btn-primary">Get Started</a>
+        </div>
+    </div>
+
+    <!-- ========== HERO SECTION ========== -->
+    <section class="hero">
+        <div class="container">
+            <!-- Trust Badge -->
+            <div class="trust-badge">
+                <i class="fas fa-shield-alt"></i>
+                Trusted by 200+ UK Food Businesses
+            </div>
+            
+            <!-- Main Heading -->
+            <h1 class="hero-title">
+                Increase Your Orders by <span class="highlight">40%</span> with Our 24/7 Call Center
+            </h1>
+            
+            <!-- Subtitle -->
+            <p class="hero-subtitle">
+                Professional order taking, customer support & complaint handling for UK takeaways and restaurants
+            </p>
+            
+            <!-- CTA Buttons -->
+            <div class="hero-buttons">
+                <a href="contact.html" class="btn btn-success btn-large">
+                    <i class="fas fa-rocket"></i>
+                    Start Free Trial (7 Days)
+                </a>
+                <a href="#how-it-works" class="btn btn-outline">
+                    <i class="fas fa-play-circle"></i>
+                    See How It Works
+                </a>
+            </div>
+            
+            <!-- Stats -->
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <div class="stat-number">98%</div>
+                    <div class="stat-label">Client Satisfaction</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">24/7</div>
+                    <div class="stat-label">Support Hours</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">200+</div>
+                    <div class="stat-label">Happy Clients</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== SERVICES TABLE ========== -->
+    <section class="services-section">
+        <div class="container">
+            <h2>Our Service Categories</h2>
+            <p class="section-subtitle">Complete call center solutions for your food business</p>
+            
+            <div class="table-wrapper">
+                <table class="services-table">
+                    <thead>
+                        <tr>
+                            <th>Service</th>
+                            <th>Description</th>
+                            <th>Best For</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Home Delivery</strong></td>
+                            <td>Complete call center solutions for home delivery services including order taking, customer support, and delivery coordination</td>
+                            <td>Restaurants offering home delivery</td>
+                        </tr>
+                        <tr>
+                            <td><strong>For Takeaways</strong></td>
+                            <td>24/7 order taking service for takeaways with menu expertise and upselling techniques</td>
+                            <td>Traditional takeaways, fish & chips shops</td>
+                        </tr>
+                        <tr>
+                            <td><strong>For Restaurants</strong></td>
+                            <td>Professional reservation management, customer queries, and complaint handling for restaurants</td>
+                            <td>Sit-down restaurants, fine dining</td>
+                        </tr>
+                        <tr>
+                            <td><strong>For Food Delivery</strong></td>
+                            <td>Integrated call center services for food delivery platforms and aggregators</td>
+                            <td>Delivery-only kitchens, cloud kitchens</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <!-- Contact CTA Below Table -->
+            <div class="contact-cta">
+                <div class="contact-info">
+                    <div class="phone-box">
+                        <i class="fas fa-phone-volume"></i>
+                        <div>
+                            <div class="phone-label">Call us 24/7</div>
+                            <a href="tel:+441234567890" class="phone-number">+44 1234 567890</a>
+                        </div>
+                    </div>
+                    <div class="cta-buttons">
+                        <a href="contact.html" class="btn btn-primary btn-large">
+                            <i class="fas fa-calendar-check"></i>
+                            Book Free Consultation
+                        </a>
+                        <a href="services.html" class="btn btn-secondary">
+                            <i class="fas fa-list"></i>
+                            View All Services
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FEATURES SECTION ========== -->
+    <section class="features-section">
+        <div class="container">
+            <h2>Why Choose JACK Call Center?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>24/7 Availability</h3>
+                    <p>Round-the-clock service for your customers, even during peak hours</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-pound-sign"></i>
+                    </div>
+                    <h3>Cost Effective</h3>
+                    <p>Save up to 40% compared to in-house call center teams</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                    <h3>Trained Agents</h3>
+                    <p>UK-accent trained professionals with food industry expertise</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Performance Reports</h3>
+                    <p>Weekly detailed reports on call metrics and customer satisfaction</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <!-- Company Info -->
+                <div class="footer-column">
+                    <div class="footer-logo">
+                        <i class="fas fa-headset"></i>
+                        <span>JACK<span>CallCenter</span></span>
+                    </div>
+                    <p class="footer-description">
+                        Professional call center services for UK takeaways and restaurants. 
+                        24/7 order taking, customer support, and complaint handling.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Quick Links -->
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Services -->
+                <div class="footer-column">
+                    <h3>Our Services</h3>
+                    <ul>
+                        <li><a href="services.html#takeaways">Order Taking</a></li>
+                        <li><a href="services.html#restaurants">Customer Support</a></li>
+                        <li><a href="services.html#delivery">Complaint Handling</a></li>
+                        <li><a href="#">Reservation Management</a></li>
+                        <li><a href="#">Menu Training</a></li>
+                        <li><a href="#">Upselling Services</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Contact Info -->
+                <div class="footer-column">
+                    <h3>Contact Us</h3>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>123 Business Street, London, UK</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <a href="tel:+441234567890">+44 1234 567890</a>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:info@jackcallcenter.com">info@jackcallcenter.com</a>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-clock"></i>
+                            <span>24/7 Customer Support</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Copyright -->
+            <div class="footer-bottom">
+                <p>&copy; 2024 JACK Call Center. All rights reserved.</p>
+                <p class="disclaimer">This is a demonstration website for business purposes.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ========== JAVASCRIPT ========== -->
+    <script src="script.js"></script>
+    
+    <!-- Inline JavaScript for quick functionality -->
+    <script>
+        // Mobile Menu Toggle
+        const menuToggle = document.getElementById('menuToggle');
+        const mobileNav = document.getElementById('mobileNav');
+        
+        if (menuToggle && mobileNav) {
+            menuToggle.addEventListener('click', function() {
+                mobileNav.classList.toggle('active');
+                const icon = this.querySelector('i');
+                if (icon.classList.contains('fa-bars')) {
+                    icon.classList.replace('fa-bars', 'fa-times');
+                } else {
+                    icon.classList.replace('fa-times', 'fa-bars');
+                }
+            });
+        }
+        
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', function(event) {
+            if (mobileNav && menuToggle) {
+                if (!menuToggle.contains(event.target) && !mobileNav.contains(event.target)) {
+                    mobileNav.classList.remove('active');
+                    const icon = menuToggle.querySelector('i');
+                    if (icon) {
+                        icon.classList.replace('fa-times', 'fa-bars');
+                    }
+                }
+            }
+        });
+        
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                if (targetId !== '#') {
+                    const targetElement = document.querySelector(targetId);
+                    if (targetElement) {
+                        window.scrollTo({
+                            top: targetElement.offsetTop - 100,
+                            behavior: 'smooth'
+                        });
+                    }
+                }
+            });
+        });
+        
+        // Add scroll effect to navbar
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+        
+        // Table row hover effect
+        const tableRows = document.querySelectorAll('.services-table tbody tr');
+        tableRows.forEach(row => {
+            row.addEventListener('mouseenter', function() {
+                this.style.backgroundColor = '#f0f9ff';
+                this.style.transform = 'translateY(-2px)';
+                this.style.boxShadow = '0 4px 12px rgba(0,0,0,0.1)';
+            });
+            
+            row.addEventListener('mouseleave', function() {
+                this.style.backgroundColor = '';
+                this.style.transform = '';
+                this.style.boxShadow = '';
+            });
+        });
+        
+        // Initialize when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('JACK Call Center website loaded successfully!');
+        });
+    </script>
+</body>
+</html>
