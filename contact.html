@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - JACKCallCenter | Get Your Free Consultation</title>
+    <meta name="description" content="Contact JACKCallCenter for call center solutions. Get free consultation, quote, or start your 7-day trial. 24/7 support available.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="critical.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="logo">
+                    <i class="fas fa-headset"></i>
+                    <span>JACKCallCenter</span>
+                </a>
+                
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="services.html">Services <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="services.html#delivery">Home Delivery Support</a>
+                            <a href="services.html#reservations">Restaurant Reservations</a>
+                            <a href="services.html#customer-service">Customer Service</a>
+                            <a href="services.html#virtual-assistant">Virtual Assistant</a>
+                            <a href="services.html#analytics">Analytics & Reporting</a>
+                        </div>
+                    </li>
+                    <li><a href="industries.html">Industries</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+                
+                <div class="nav-cta">
+                    <a href="tel:+15551234567" class="phone-link">
+                        <i class="fas fa-phone"></i> +1 (555) 123-4567
+                    </a>
+                    <a href="contact.html" class="btn-primary">Get Quote</a>
+                </div>
+                
+                <button class="hamburger" id="hamburger">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Contact Us</h1>
+            <p>Get in touch for a free consultation or start your 7-day trial</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-main">
+        <div class="container">
+            <div class="contact-wrapper">
+                <!-- Contact Info -->
+                <div class="contact-info">
+                    <div class="info-card">
+                        <h2>Get In Touch</h2>
+                        <p>Have questions about our services? Ready to get started? Contact us using any of the methods below.</p>
+                        
+                        <div class="contact-methods">
+                            <div class="contact-method">
+                                <i class="fas fa-phone"></i>
+                                <div>
+                                    <h3>Phone Support</h3>
+                                    <p>+1 (555) 123-4567</p>
+                                    <p class="note">24/7 Support Available</p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-method">
+                                <i class="fas fa-envelope"></i>
+                                <div>
+                                    <h3>Email</h3>
+                                    <p>info@jackcallcenter.com</p>
+                                    <p class="note">Response within 2 hours</p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-method">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div>
+                                    <h3>Office Address</h3>
+                                    <p>123 Business Ave, Suite 100<br>New York, NY 10001</p>
+                                    <p class="note">By appointment only</p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-method">
+                                <i class="fas fa-clock"></i>
+                                <div>
+                                    <h3>Business Hours</h3>
+                                    <p>Monday - Friday: 9am - 6pm EST</p>
+                                    <p>24/7 Call Center Operations</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- FAQ Preview -->
+                    <div class="faq-preview">
+                        <h3>Frequently Asked Questions</h3>
+                        <div class="faq-item">
+                            <button class="faq-question">How quickly can you start serving my business?</button>
+                            <div class="faq-answer">
+                                <p>We can typically onboard new clients within 7-14 days, depending on the complexity of integration with your existing systems.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <button class="faq-question">Do you offer multilingual support?</button>
+                            <div class="faq-answer">
+                                <p>Yes, we offer support in English, Spanish, French, Mandarin, and several other languages. Additional languages can be arranged upon request.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <button class="faq-question">Is there a contract or minimum term?</button>
+                            <div class="faq-answer">
+                                <p>We offer month-to-month contracts with no long-term commitment. However, annual contracts come with discounted rates.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Contact Form -->
+                <div class="contact-form-wrapper">
+                    <div class="form-header">
+                        <h2>Send Us a Message</h2>
+                        <p>Fill out the form below and we'll get back to you within 2 hours.</p>
+                    </div>
+                    
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName">First Name *</label>
+                                <input type="text" id="firstName" name="firstName" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName">Last Name *</label>
+                                <input type="text" id="lastName" name="lastName" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number *</label>
+                                <input type="tel" id="phone" name="phone" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="company">Company Name</label>
+                            <input type="text" id="company" name="company">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="businessType">Type of Business *</label>
+                            <select id="businessType" name="businessType" required>
+                                <option value="">Select Business Type</option>
+                                <option value="restaurant">Restaurant</option>
+                                <option value="pizzeria">Pizzeria</option>
+                                <option value="food-delivery">Food Delivery Service</option>
+                                <option value="cafe">Café/Bakery</option>
+                                <option value="catering">Catering Service</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="services">Services Interested In *</label>
+                            <div class="checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="services" value="delivery"> Home Delivery Support
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="services" value="reservations"> Restaurant Reservations
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="services" value="customer-service"> Customer Service
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="services" value="virtual-assistant"> Virtual Assistant
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="services" value="analytics"> Analytics & Reporting
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="services" value="not-sure"> Not Sure / Need Consultation
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="callVolume">Estimated Monthly Call Volume</label>
+                            <select id="callVolume" name="callVolume">
+                                <option value="">Select Volume</option>
+                                <option value="0-500">0-500 calls</option>
+                                <option value="500-1500">500-1,500 calls</option>
+                                <option value="1500-3000">1,500-3,000 calls</option>
+                                <option value="3000+">3,000+ calls</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Your Message *</label>
+                            <textarea id="message" name="message" rows="5" required placeholder="Tell us about your needs, challenges, or specific requirements..."></textarea>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="newsletter" checked> Send me updates, tips, and industry insights
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="terms" required> I agree to the <a href="#">Privacy Policy</a> and <a href="#">Terms of Service</a> *
+                            </label>
+                        </div>
+                        
+                        <button type="submit" class="btn-primary btn-block">Send Message</button>
+                        
+                        <p class="form-note">By submitting this form, you agree to be contacted by our team. We respect your privacy and will never share your information.</p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Actions -->
+    <section class="quick-actions">
+        <div class="container">
+            <h2>Quick Actions</h2>
+            <div class="actions-grid">
+                <a href="tel:+15551234567" class="action-card">
+                    <i class="fas fa-phone"></i>
+                    <h3>Call Now</h3>
+                    <p>Speak directly with our sales team</p>
+                </a>
+                
+                <a href="mailto:info@jackcallcenter.com" class="action-card">
+                    <i class="fas fa-envelope"></i>
+                    <h3>Email Us</h3>
+                    <p>Send us your questions or requirements</p>
+                </a>
+                
+                <a href="#live-chat" class="action-card" id="liveChatBtn">
+                    <i class="fas fa-comments"></i>
+                    <h3>Live Chat</h3>
+                    <p>Chat with our support team now</p>
+                </a>
+                
+                <a href="services.html" class="action-card">
+                    <i class="fas fa-file-alt"></i>
+                    <h3>Get Quote</h3>
+                    <p>Receive a customized price quote</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
+        <div class="container">
+            <h2>Our Location</h2>
+            <div class="map-placeholder">
+                <!-- In a real site, you would embed Google Maps here -->
+                <div class="map-image">
+                    <img src="https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="New York City">
+                    <div class="map-overlay">
+                        <div class="map-info">
+                            <h3>JACKCallCenter Headquarters</h3>
+                            <p><i class="fas fa-map-marker-alt"></i> 123 Business Ave, Suite 100, New York, NY 10001</p>
+                            <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+                            <p><i class="fas fa-clock"></i> By appointment only</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="logo">
+                        <i class="fas fa-headset"></i>
+                        <span>JACKCallCenter</span>
+                    </div>
+                    <p>Professional call center solutions for the food industry since 2012.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="industries.html">Industries</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="services.html#delivery">Home Delivery Support</a></li>
+                        <li><a href="services.html#reservations">Restaurant Reservations</a></li>
+                        <li><a href="services.html#customer-service">Customer Service</a></li>
+                        <li><a href="services.html#virtual-assistant">Virtual Assistant</a></li>
+                        <li><a href="services.html#analytics">Analytics & Reporting</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Contact Info</h3>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Business Ave, Suite 100<br>New York, NY 10001</li>
+                        <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
+                        <li><i class="fas fa-envelope"></i> info@jackcallcenter.com</li>
+                        <li><i class="fas fa-clock"></i> 24/7 Support Available</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; <span id="currentYear"></span> JACKCallCenter. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Live Chat Widget (Hidden by default) -->
+    <div class="live-chat-widget" id="liveChatWidget">
+        <div class="chat-header">
+            <h3>Live Chat Support</h3>
+            <button class="close-chat" id="closeChat">&times;</button>
+        </div>
+        <div class="chat-body">
+            <div class="chat-messages">
+                <div class="message agent">
+                    <p>Hello! Welcome to JACKCallCenter. How can I help you today?</p>
+                </div>
+            </div>
+            <div class="chat-input">
+                <input type="text" placeholder="Type your message..." id="chatInput">
+                <button id="sendChat"><i class="fas fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="contact.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
